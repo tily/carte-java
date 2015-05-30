@@ -31,8 +31,6 @@ GEM
     eventmachine (1.0.7)
     haml (4.0.6)
       tilt
-    heroku-deflater (0.5.3)
-      rack (>= 1.4.5)
     i18n (0.7.0)
     json (1.8.2)
     method_source (0.8.2)
@@ -61,6 +59,8 @@ GEM
       method_source (~> 0.8.1)
       slop (~> 3.4)
     rack (1.6.1)
+    rack-gzip-file (0.0.1)
+      rack (>= 1.5.0)
     rack-protection (1.5.3)
       rack
     rack-test (0.6.3)
@@ -99,7 +99,7 @@ PLATFORMS
 
 DEPENDENCIES
   carte-server
-  heroku-deflater
+  rack-gzip-file
   rake
   shotgun
   thin
